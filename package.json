@@ -1,0 +1,25 @@
+{
+  "name": "noi-site",
+  "version": "1.0.0",
+  "description": "NOI website component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GovLab/noi-site.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/GovLab/noi-site/issues"
+  },
+  "homepage": "https://github.com/GovLab/noi-site#readme",
+  "devDependencies": {
+    "govlab-styleguide": "^1.0.10"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
