@@ -1,0 +1,162 @@
+{% extends '_base.html' %}
+
+{% block main %}
+<div class="b-above-header m-blue">
+  <div class="row">
+    <div class="medium-2 column">
+      <form action="" class="b-form m-negative">
+        <select name="" id="">
+          <option value="">English</option>
+          <option value="">Spanish</option>
+        </select>
+      </form>
+    </div>
+    <div class="medium-2 medium-offset-8 column">
+      <a href="#" class="b-button m-naked">Login</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="b-landing-section m-blue">
+  
+  <div class="row">
+    <div class="large-10 large-centered column">
+      <div class="b-main-logo">
+        <img src="./img/noi-logo-white.png" alt="">
+      </div>
+      <h1>The skill-sharing network for government & civic innovators worldwide</h1>
+
+      <a href="#" class="b-button m-large">Get Started</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="small-6 medium-2 large-2 column small-centered">
+        <img src="./img/govlab-logo-white.png" alt="Built by The GovLab">
+      </div>
+    </div>
+</footer>
+</div>
+
+<div class="b-page-section b-noi-categories">
+  <div class="row">
+    <div class="large-12 column">
+      <h2>Answer questions about what you know and can share with others. Telling us about your innovation skills enables you to get matched to those with complementary expertise.</h2>
+    </div>
+  </div>
+  <div class="row small-collapse expanded">
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-open-data">
+        <h3>Open Data</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-community-engagement">
+        <h3>Community Engagement</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-citizen-science">
+        <h3>Citizen Science</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-crowdsourcing">
+        <h3>Crowdsourcing</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-lab-design">
+        <h3>Lab Design</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-prizes">
+        <h3>Prizes</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-data-science">
+        <h3>Data Science</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-randomized-controlled-trials">
+        <h3>Randomized Controlled Trials</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="b-gallery-section">
+  <!-- @gmattar Make this gallery with this scaling effect and multiple images showing - http://www.thegovlab.org/project-the-govlab-academy.html -->
+  <div class="b-slider m-mobile-screens">
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-1.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-2.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Find innovators who know what you don’t and who want to learn what you can share.</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-3.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-4.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-5.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-6.jpg" alt="">
+    </section>
+  </div>
+</div>
+
+<section class="b-divider">
+  <h3>Build your own network of innovators and find the right collaborators for your project!</h3>
+</section>
+
+<script>
+$('.m-mobile-screens').slick({
+  arrows: true,
+  infinite: true,
+  draggable: false,
+  centerMode: true,
+  slidesToShow: 5,
+  variableWidth: true,
+  focusOnSelect: true,
+  swipeToSlide: true,
+  responsive: [
+  {
+    breakpoint: 800,
+    settings: {
+      draggable: true,
+      slidesToShow: 3,
+    }
+  }
+  ]
+});
+</script>
+
+
+{% endblock %}

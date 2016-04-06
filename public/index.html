@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOI Site - Desktop Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- Pulls our Typekit Fonts -->
+    <script src="//use.typekit.net/zez3buj.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+    <!-- Pulls the material design icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Pulls Slick CSS for sliders -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+    <!-- Pulls the main styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="">
+
+<!-- Main Menu (Off Canvas) -->
+<nav class="b-main-menu">
+  <a href="./">Home</a>
+</nav>
+
+<main role="main">
+<div class="b-above-header m-blue">
+  <div class="row">
+    <div class="medium-2 column">
+      <form action="" class="b-form m-negative">
+        <select name="" id="">
+          <option value="">English</option>
+          <option value="">Spanish</option>
+        </select>
+      </form>
+    </div>
+    <div class="medium-2 medium-offset-8 column">
+      <a href="#" class="b-button m-naked">Login</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="b-landing-section m-blue">
+  
+  <div class="row">
+    <div class="large-10 large-centered column">
+      <div class="b-main-logo">
+        <img src="./img/noi-logo-white.png" alt="">
+      </div>
+      <h1>The skill-sharing network for government & civic innovators worldwide</h1>
+
+      <a href="#" class="b-button m-large">Get Started</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="small-6 medium-2 large-2 column small-centered">
+        <img src="./img/govlab-logo-white.png" alt="Built by The GovLab">
+      </div>
+    </div>
+</footer>
+</div>
+
+<div class="b-page-section b-noi-categories">
+  <div class="row">
+    <div class="large-12 column">
+      <h2>Answer questions about what you know and can share with others. Telling us about your innovation skills enables you to get matched to those with complementary expertise.</h2>
+    </div>
+  </div>
+  <div class="row small-collapse expanded">
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-open-data">
+        <h3>Open Data</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-community-engagement">
+        <h3>Community Engagement</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-citizen-science">
+        <h3>Citizen Science</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-crowdsourcing">
+        <h3>Crowdsourcing</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-lab-design">
+        <h3>Lab Design</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-prizes">
+        <h3>Prizes</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-data-science">
+        <h3>Data Science</h3>
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 column">
+      <div class="e-category m-randomized-controlled-trials">
+        <h3>Randomized Controlled Trials</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="b-gallery-section">
+  <!-- @gmattar Make this gallery with this scaling effect and multiple images showing - http://www.thegovlab.org/project-the-govlab-academy.html -->
+  <div class="b-slider m-mobile-screens">
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-1.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-2.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Find innovators who know what you don’t and who want to learn what you can share.</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-3.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-4.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-5.jpg" alt="">
+    </section>
+    <section id="slide-id" class="b-slide">
+      <header>
+          <h4>Screenshot Message</h4>
+      </header>
+      <img src="./img/screenshots/noi-screenshot-6.jpg" alt="">
+    </section>
+  </div>
+</div>
+
+<section class="b-divider">
+  <h3>Build your own network of innovators and find the right collaborators for your project!</h3>
+</section>
+
+<script>
+$('.m-mobile-screens').slick({
+  arrows: true,
+  infinite: true,
+  draggable: false,
+  centerMode: true,
+  slidesToShow: 5,
+  variableWidth: true,
+  focusOnSelect: true,
+  swipeToSlide: true,
+  responsive: [
+  {
+    breakpoint: 800,
+    settings: {
+      draggable: true,
+      slidesToShow: 3,
+    }
+  }
+  ]
+});
+</script>
+
+
+</main>
+
+<footer class="b-footer m-purple">
+    <div class="row">
+        <div class="medium-2 column medium-offset-5">
+            <img src="./img/govlab-logo-white.png" alt="Built by The GovLab" class="e-partner-logo m-govlab"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column large-12">
+            <p>In collaboration with innovation teams from governments of</p>
+            <div class="b-flags">
+                <a href="#" class="e-flag m-argentina"></a>
+                <a href="#" class="e-flag m-chile"></a>
+                <a href="#" class="e-flag m-uk"></a>
+                <a href="#" class="e-flag m-mexico"></a>
+                <a href="#" class="e-flag m-south-australia"></a>
+                <a href="#" class="e-flag m-spain"></a>
+                <a href="#" class="e-flag m-us"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column small-10 small-offset-1">
+            <div class="e-utilities"><a href="#" class="b-button">Get Started</a></div>
+            <div class="e-utilities"><a href="#" class="b-button m-naked">Learn More</a></div>
+            <div class="e-utilities"><a href="#" class="b-button m-naked">Terms of Service</a></div>
+        </div>
+    </div>
+</footer>
+
+<div class="b-copyright">
+    <div class="row">
+        <div class="large-10 large-centered columns">
+            <a class="e-cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> <br> <a href="#">Copyright Infringement Information</a>.
+        </div>
+    </div>
+</div>
+
+<div id="overlay"></div>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
