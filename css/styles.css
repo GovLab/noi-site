@@ -7145,11 +7145,15 @@ code.m-negative {
     background-color: rgba(51, 51, 51, 0.1);
     padding: 15px 0; }
 
+.b-divider.m-large {
+  padding: 40px 0; }
+
 .b-divider h3 {
   text-align: center; }
 
 .b-noi-categories {
-  background-color: #008ab3; }
+  background-color: #008ab3;
+  padding-bottom: 0; }
   .b-noi-categories .large-3:nth-child(2) .e-category,
   .b-noi-categories .large-3:nth-child(4) .e-category,
   .b-noi-categories .large-3:nth-child(5) .e-category,
@@ -7167,7 +7171,19 @@ code.m-negative {
     height: 0;
     text-align: center;
     background-color: transparent;
-    color: white; }
+    color: white;
+    position: relative; }
+    .b-noi-categories .e-category img {
+      opacity: .1;
+      position: absolute;
+      max-width: 80%;
+      max-height: 80%;
+      top: 10%;
+      left: 20%;
+      transition: all 1s ease; }
+      .b-noi-categories .e-category img:hover {
+        transform: rotate(360deg);
+        transition: all 1s ease; }
     .b-noi-categories .e-category h3 {
       font-size: 1.1rem; }
 
