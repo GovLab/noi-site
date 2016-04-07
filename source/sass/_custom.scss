@@ -44,12 +44,15 @@
 }
 
 .b-divider {
+  &.m-large { padding: 40px 0; }
+
   h3 { text-align: center; }
 }
 
 
 .b-noi-categories {
   background-color: $blue;
+  padding-bottom: 0;
 
   .large-3:nth-child(2) .e-category,
   .large-3:nth-child(4) .e-category,
@@ -71,12 +74,29 @@
     text-align: center;
     background-color: transparent;
     color: $white;
+    position: relative;
+    
+    img {
+      opacity: .1;
+      position: absolute;
+      max-width: 80%;
+      max-height: 80%;
+      top: 10%;
+      left: 20%;
+      transition: all 1s ease;
+
+      &:hover {
+        transform: rotate(360deg);
+        transition: all 1s ease;
+
+      }
+    }
 
     h3 { font-size: 1.1rem; }
   }
 
   .m-open-data {
-
+    
   }
   .m-community-engagement {
 
