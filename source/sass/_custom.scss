@@ -75,7 +75,7 @@
     background-color: transparent;
     color: $white;
     position: relative;
-    
+
     img {
       opacity: .1;
       position: absolute;
@@ -96,7 +96,7 @@
   }
 
   .m-open-data {
-    
+
   }
   .m-community-engagement {
 
@@ -136,21 +136,51 @@
 
 
 .b-slider.m-mobile-screens {
-  margin: 0 auto;
-  overflow: visible;
-
-  .b-slide {
+    width: 100%;
+    overflow: hidden;
     text-align: center;
-    width: 400px;
+    background-color: #333;
 
-    img { 
-      max-width: 300px; 
-      margin: 0 auto;
+    @include breakpoint($desktop) {
+        margin-bottom: -95px;
+        margin-top: 40px;
     }
-  }
+
+    .slick-list {
+        @include breakpoint($desktop) { padding-bottom: 15px !important; }
+    }
+
+    .b-slide {
+        display: inline-block;
+        outline: none;
+        text-align: center;
+        width: 400px;
+
+        header {
+            transition: all 0.5s ease;
+
+            h4 {
+              padding: 0 10px;
+            }
+        }
+
+        img {
+            max-width: 300px;
+            margin: 0 auto;
+            transition: all 0.5s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+            @include breakpoint($mobile-only) { max-height: 240px; }
+            @include breakpoint($tablet) { max-height: 360px; }
+            @include breakpoint($desktop) { max-height: 500px; }
+        }
+
+        &:not(.slick-current) img,
+        &:not(.slick-current) header {
+            transform: scale(.7);
+        }
+    }
 }
-
-
 
 
 
@@ -164,7 +194,7 @@
   text-align: center;
 
   p { padding-top: 20px; }
-  
+
 
   .e-utilities {
     margin: 10px;
@@ -182,7 +212,7 @@
 
 .b-flags {
   text-align: center;
-  
+
   .e-flag {
     width: 60px;
     height: 60px;
