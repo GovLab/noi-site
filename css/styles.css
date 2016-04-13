@@ -7206,14 +7206,39 @@ code.m-negative {
   /* IE6-9 */ }
 
 .b-slider.m-mobile-screens {
-  margin: 0 auto;
-  overflow: visible; }
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #333; }
+  @media screen and (min-width: 64.0625em) {
+    .b-slider.m-mobile-screens {
+      margin-bottom: -95px;
+      margin-top: 40px; } }
+  @media screen and (min-width: 64.0625em) {
+    .b-slider.m-mobile-screens .slick-list {
+      padding-bottom: 15px !important; } }
   .b-slider.m-mobile-screens .b-slide {
+    display: inline-block;
+    outline: none;
     text-align: center;
     width: 400px; }
+    .b-slider.m-mobile-screens .b-slide header {
+      transition: all 0.5s ease; }
+      .b-slider.m-mobile-screens .b-slide header h4 {
+        padding: 0 10px; }
     .b-slider.m-mobile-screens .b-slide img {
       max-width: 300px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      transition: all 0.5s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-height: 240px;
+      max-height: 360px; }
+      @media screen and (min-width: 64.0625em) {
+        .b-slider.m-mobile-screens .b-slide img {
+          max-height: 500px; } }
+    .b-slider.m-mobile-screens .b-slide:not(.slick-current) img,
+    .b-slider.m-mobile-screens .b-slide:not(.slick-current) header {
+      transform: scale(0.7); }
 
 .b-footer {
   text-align: center; }

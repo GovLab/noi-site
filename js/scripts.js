@@ -96,34 +96,23 @@ $(document).ready(function($) {
     // Slider Config (Sticky)
     $('.b-slider').slick({
         arrows: true,
+        infinite: false,
         draggable: false,
+        centerMode: true,
+        slidesToShow: 1,
+        variableWidth: true,
+        focusOnSelect: true,
         swipeToSlide: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
         responsive: [
-        {
-            breakpoint: 800,
-            settings: {
-                draggable: true,
+            {
+                breakpoint: 800,
+                settings: {
+                    draggable: true,
+                    slidesToShow: 1,
+                }
             }
-        }
         ]
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     // Tooltip Logic
