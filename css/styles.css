@@ -7195,7 +7195,7 @@ code.m-negative {
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #008ab3), color-stop(68%, #008ab3), color-stop(68%, #333333), color-stop(100%, #333333));
   /* Chrome, Safari4+ */
   background: -webkit-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
-  /* Chrome10+,Safari5.1+ */
+  /* Chrome10+, Safari5.1+ */
   background: -o-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
   /* Opera 11.10+ */
   background: -ms-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
@@ -7260,17 +7260,17 @@ code.m-negative {
     background-size: cover;
     background-position: center;
     margin: 15px; }
-  .b-flags .m-argentina {
-    background-image: url("../img/flags/argentina-flag.png"); }
-  .b-flags .m-chile {
-    background-image: url("../img/flags/chile-flag.png"); }
   .b-flags .m-uk {
     background-image: url("../img/flags/united-kingdom-flag.png"); }
-  .b-flags .m-mexico {
-    background-image: url("../img/flags/mexico-flag.png"); }
-  .b-flags .m-south-australia {
-    background-image: url("../img/flags/south-australia-flag.png"); }
-  .b-flags .m-spain {
-    background-image: url("../img/flags/spain-flag.png"); }
   .b-flags .m-us {
     background-image: url("../img/flags/united-states-flag.png"); }
+  .b-flags .m-chile {
+    background-image: url("../img/flags/chile-flag.png"); }
+  .b-flags .m-spain {
+    background-image: url("../img/flags/spain-flag.png"); }
+  .b-flags .m-mexico {
+    background-image: url("../img/flags/mexico-flag.png"); }
+  .b-flags .m-argentina {
+    background-image: url("../img/flags/argentina-flag.png"); }
+  .b-flags .m-south-australia {
+    background-image: url("../img/flags/south-australia-flag.png"); }
