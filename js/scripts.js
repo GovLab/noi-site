@@ -10,7 +10,7 @@ $(document).ready(function($) {
     // Slider Config (Sticky)
     $('.b-slider.m-mobile-screens').slick({
         arrows: true,
-        infinite: false,
+        infinite: true,
         draggable: false,
         centerMode: true,
         slidesToShow: 1,
