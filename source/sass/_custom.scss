@@ -116,15 +116,7 @@
 
 
 .b-gallery-section {
-                             background: rgba(0,138,179,1);
-/* Old Browsers */           background: -moz-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* FF3.6+ */                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,138,179,1)), color-stop(68%, rgba(0,138,179,1)), color-stop(68%, rgba(51,51,51,1)), color-stop(100%, rgba(51,51,51,1)));
-/* Chrome, Safari4+ */       background: -webkit-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* Chrome10+, Safari5.1+ */ background: -o-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* Opera 11.10+ */          background: -ms-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* IE 10+ */                background: linear-gradient(to bottom, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
-/* W3C */                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ab3', endColorstr='#333333', GradientType=0 );
-/* IE6-9 */
+    margin-top: 0;
 }
 
 .b-slider.m-mobile-screens {
@@ -135,7 +127,8 @@
 
     @include breakpoint($desktop) {
         margin-bottom: -95px;
-        margin-top: 40px;
+        padding-top: 40px;
+        // margin-top: 40px;
     }
 
     .slick-list {
@@ -147,6 +140,7 @@
         outline: none;
         text-align: center;
         width: 400px;
+        transition: all 0.5s ease;
 
         header {
             transition: all 0.5s ease;
@@ -167,9 +161,15 @@
             @include breakpoint($desktop) { max-height: 500px; }
         }
 
-        &:not(.slick-current) img,
-        &:not(.slick-current) header {
-            transform: scale(.7);
+        // &:not(.slick-current) img,
+        // &:not(.slick-current) header {
+        //     transform: scale(.7);
+        // }
+
+        &:not(.slick-current) {
+            transform: scale(.8);
+            transform-origin: 10%;
+            transition: all 0.5s ease-in;
         }
     }
 }
