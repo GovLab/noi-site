@@ -7188,22 +7188,7 @@ code.m-negative {
       font-size: 1.1rem; }
 
 .b-gallery-section {
-  background: #008ab3;
-  /* Old Browsers */
-  background: -moz-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #008ab3), color-stop(68%, #008ab3), color-stop(68%, #333333), color-stop(100%, #333333));
-  /* Chrome, Safari4+ */
-  background: -webkit-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
-  /* Chrome10+, Safari5.1+ */
-  background: -o-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
-  /* IE 10+ */
-  background: linear-gradient(to bottom, #008ab3 0%, #008ab3 68%, #333333 68%, #333333 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ab3', endColorstr='#333333', GradientType=0 );
-  /* IE6-9 */ }
+  margin-top: 0; }
 
 .b-slider.m-mobile-screens {
   width: 100%;
@@ -7213,7 +7198,7 @@ code.m-negative {
   @media screen and (min-width: 64.0625em) {
     .b-slider.m-mobile-screens {
       margin-bottom: -95px;
-      margin-top: 40px; } }
+      padding-top: 40px; } }
   @media screen and (min-width: 64.0625em) {
     .b-slider.m-mobile-screens .slick-list {
       padding-bottom: 15px !important; } }
@@ -7221,7 +7206,8 @@ code.m-negative {
     display: inline-block;
     outline: none;
     text-align: center;
-    width: 400px; }
+    width: 400px;
+    transition: all 0.5s ease; }
     .b-slider.m-mobile-screens .b-slide header {
       transition: all 0.5s ease; }
       .b-slider.m-mobile-screens .b-slide header h4 {
@@ -7236,9 +7222,10 @@ code.m-negative {
       @media screen and (min-width: 64.0625em) {
         .b-slider.m-mobile-screens .b-slide img {
           max-height: 500px; } }
-    .b-slider.m-mobile-screens .b-slide:not(.slick-current) img,
-    .b-slider.m-mobile-screens .b-slide:not(.slick-current) header {
-      transform: scale(0.7); }
+    .b-slider.m-mobile-screens .b-slide:not(.slick-current) {
+      transform: scale(0.8);
+      transform-origin: 10%;
+      transition: all 0.5s ease-in; }
 
 .b-footer {
   text-align: center; }
