@@ -1,139 +1,131 @@
 .b-above-header {
-  padding: 5px;
-  &.m-blue { background-color: darken($blue, 2); }
+    padding: 5px;
+    &.m-blue { background-color: darken($blue, 2); }
 }
-
-
 
 .b-form.m-negative {
-  select {
-    background-color: rgba($white, .2);
-    color: $white;
-    margin: 0;
-  }
+    select {
+        background-color: rgba($white, .2);
+        color: $white;
+        margin: 0;
+    }
 }
 
-
-
 .b-landing-section {
-  padding: 60px 0 0;
-  text-align: center;
+    padding: 60px 0 0;
+    text-align: center;
 
-  &.m-blue { background-color: $blue; }
+    &.m-blue { background-color: $blue; }
 
-  h1 {
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: $white;
-    margin: 30px 0;
-  }
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: $white;
+        margin: 30px 0;
+    }
 
-  .b-main-logo > img {
-    max-width: 460px;
-  }
+    .b-main-logo > img {
+        max-width: 460px;
+    }
 
-  .b-button {
-    margin: 40px 0 60px;
-    color: $white;
-  }
+    .b-button {
+        margin: 40px 0 60px;
+        color: $white;
+    }
 
-  footer {
-    background-color: rgba($black, .1);
-    padding: 15px 0;
-  }
+    footer {
+        background-color: rgba($black, .1);
+        padding: 15px 0;
+    }
 }
 
 .b-divider {
-  &.m-large { padding: 40px 0; }
+    &.m-large { padding: 40px 0; }
 
-  h3 { text-align: center; }
+    h3 { text-align: center; }
 }
 
-
 .b-noi-categories {
-  background-color: $blue;
-  padding-bottom: 0;
+    background-color: $blue;
+    padding-bottom: 0;
 
-  .large-3:nth-child(2) .e-category,
-  .large-3:nth-child(4) .e-category,
-  .large-3:nth-child(5) .e-category,
-  .large-3:nth-child(7) .e-category { background-color: rgba($black, .05); }
+    .large-3:nth-child(2) .e-category,
+    .large-3:nth-child(4) .e-category,
+    .large-3:nth-child(5) .e-category,
+    .large-3:nth-child(7) .e-category { background-color: rgba($black, .05); }
 
-  h2 {
-    font-size: 1.1rem;
-    padding: 15px 40px;
-    text-align: center;
-    color: $white;
-    text-transform: none;
-  }
-
-  .e-category {
-    width: 100%;
-    padding: 35% 0 45%;
-    height: 0;
-    text-align: center;
-    background-color: transparent;
-    color: $white;
-    position: relative;
-
-    img {
-      opacity: .1;
-      position: absolute;
-      max-width: 80%;
-      max-height: 80%;
-      top: 10%;
-      left: 20%;
-      transition: all 1s ease;
-
-      &:hover {
-        transform: rotate(360deg);
-        transition: all 1s ease;
-
-      }
+    h2 {
+        font-size: 1.1rem;
+        padding: 15px 40px;
+        text-align: center;
+        color: $white;
+        text-transform: none;
     }
 
-    h3 { font-size: 1.1rem; }
-  }
+    .e-category {
+        width: 100%;
+        padding: 35% 0 45%;
+        height: 0;
+        text-align: center;
+        background-color: transparent;
+        color: $white;
+        position: relative;
 
-  .m-open-data {
+        img {
+            opacity: .1;
+            position: absolute;
+            max-width: 80%;
+            max-height: 80%;
+            top: 10%;
+            left: 20%;
+            transition: all 1s ease;
 
-  }
-  .m-community-engagement {
+            &:hover {
+                transform: rotate(360deg);
+                transition: all 1s ease;
+            }
+        }
 
-  }
-  .m-citizen-science {
+        h3 { font-size: 1.1rem; }
+    }
 
-  }
-  .m-crowdsourcing {
+    .m-open-data {
+    }
 
-  }
-  .m-lab-design {
+    .m-community-engagement {
+    }
 
-  }
-  .m-prizes {
+    .m-citizen-science {
+    }
 
-  }
-  .m-data-science {
+    .m-crowdsourcing {
+    }
 
-  }
-  .m-randomized-controlled-trials {
+    .m-lab-design {
+    }
 
-  }
+    .m-prizes {
+    }
+
+    .m-data-science {
+    }
+
+    .m-randomized-controlled-trials {
+    }
 }
 
 
 .b-gallery-section {
-  background: rgba(0,138,179,1);
-/* Old Browsers */background: -moz-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* FF3.6+ */background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,138,179,1)), color-stop(68%, rgba(0,138,179,1)), color-stop(68%, rgba(51,51,51,1)), color-stop(100%, rgba(51,51,51,1)));
-/* Chrome, Safari4+ */background: -webkit-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* Opera 11.10+ */background: -ms-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
- /* IE 10+ */background: linear-gradient(to bottom, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
-/* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ab3', endColorstr='#333333', GradientType=0 );
+                             background: rgba(0,138,179,1);
+/* Old Browsers */           background: -moz-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
+ /* FF3.6+ */                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,138,179,1)), color-stop(68%, rgba(0,138,179,1)), color-stop(68%, rgba(51,51,51,1)), color-stop(100%, rgba(51,51,51,1)));
+/* Chrome, Safari4+ */       background: -webkit-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
+ /* Chrome10+, Safari5.1+ */ background: -o-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
+ /* Opera 11.10+ */          background: -ms-linear-gradient(top, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
+ /* IE 10+ */                background: linear-gradient(to bottom, rgba(0,138,179,1) 0%, rgba(0,138,179,1) 68%, rgba(51,51,51,1) 68%, rgba(51,51,51,1) 100%);
+/* W3C */                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ab3', endColorstr='#333333', GradientType=0 );
 /* IE6-9 */
 }
-
 
 .b-slider.m-mobile-screens {
     width: 100%;
@@ -160,7 +152,7 @@
             transition: all 0.5s ease;
 
             h4 {
-              padding: 0 10px;
+                padding: 0 10px;
             }
         }
 
@@ -182,53 +174,39 @@
     }
 }
 
-
-
-
-
-
-
-
-
 .b-footer {
-  text-align: center;
+    text-align: center;
 
-  p { padding-top: 20px; }
+    p { padding-top: 20px; }
 
+    .e-utilities {
+        margin: 10px;
 
-  .e-utilities {
-    margin: 10px;
-
-    .b-button.m-naked {
-      margin: 0;
+        .b-button.m-naked {
+            margin: 0;
+        }
     }
-  }
 }
 
-
-
-
-
-
 .b-flags {
-  text-align: center;
+    text-align: center;
 
-  .e-flag {
-    width: 60px;
-    height: 60px;
-    background-color: #FFF;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 15px;
-  }
+    .e-flag {
+        width: 60px;
+        height: 60px;
+        background-color: #FFF;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 15px;
+    }
 
-  .m-argentina { background-image: url("../img/flags/argentina-flag.png")}
-  .m-chile { background-image: url("../img/flags/chile-flag.png")}
-  .m-uk { background-image: url("../img/flags/united-kingdom-flag.png")}
-  .m-mexico { background-image: url("../img/flags/mexico-flag.png")}
-  .m-south-australia { background-image: url("../img/flags/south-australia-flag.png")}
-  .m-spain { background-image: url("../img/flags/spain-flag.png")}
-  .m-us { background-image: url("../img/flags/united-states-flag.png")}
+    .m-uk { background-image: url("../img/flags/united-kingdom-flag.png") }
+    .m-us { background-image: url("../img/flags/united-states-flag.png") }
+    .m-chile { background-image: url("../img/flags/chile-flag.png") }
+    .m-spain { background-image: url("../img/flags/spain-flag.png") }
+    .m-mexico { background-image: url("../img/flags/mexico-flag.png") }
+    .m-argentina { background-image: url("../img/flags/argentina-flag.png") }
+    .m-south-australia { background-image: url("../img/flags/south-australia-flag.png") }
 }

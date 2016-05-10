@@ -9,15 +9,13 @@ file            = require('gulp-file'),
 plumber         = require('gulp-plumber'),
 packagejson     = require('./package.json');
 
-
-
 gulp.task('browserSync', function() {
   browserSync({
     server: {
       baseDir: 'public' // This is the DIST folder browsersync will serve
     },
     open: false
-  })
+  });
 })
 
 gulp.task('sass', function() {
@@ -26,7 +24,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('img', function() {
@@ -37,19 +35,17 @@ gulp.task('img', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src(['node_modules/govlab-styleguide/js/**/*', 'source/js/**/*']) // this is weird
+  return gulp.src('source/js/**/*') // this is weird
   .pipe(plumber())
   .pipe(gulp.dest('public/js'))
   .pipe(browserSync.stream());
 });
 
-
 // Nunjucks
 gulp.task('nunjucks', function() {
-
   var options = {
     path: 'source/templates',
-    ext: '.html'  
+    ext: '.html'
   };
 
   // nunjucksRender.nunjucks.configure(['source/templates/']);
@@ -63,10 +59,8 @@ gulp.task('nunjucks', function() {
   .pipe(gulp.dest('public'))
   .pipe(browserSync.reload({
     stream: true
-  }))
+  }));
 });
-
-
 
 gulp.task('deploy', ['sass', 'nunjucks', 'js', 'img'], shell.task([
   'git subtree push --prefix public origin gh-pages'
