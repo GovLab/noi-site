@@ -114,9 +114,77 @@
     }
 }
 
+.b-overview-graph {
+    .e-graph-item {
+        position: relative;
+        padding: 20px;
+        height: 120px;
+
+        h3 {
+            color: $white;
+        }
+
+        span {
+            color: $white;
+            float: right;
+            
+        }
+
+        &:nth-of-type(even) {
+            background-color: rgba($black, .1);
+        }
+    }
+
+    .e-bars {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .e-bar {
+        height: 150px;
+        float: left;
+        display: inline-block;
+
+        &.m-yellow { background-color: $yellow; }
+        &.m-orange { background-color: $orange; }
+        &.m-green { background-color: $green; }
+        &.m-purple { background-color: $purple; }
+    }
+}
+
 
 .b-gallery-section {
     margin-top: 0;
+}
+
+.b-slider.m-news {
+    .b-slide { 
+        width: 100vw;
+        padding: 0;
+
+        h4 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            opacity: .4;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        .e-band {
+            padding: 24px 0;
+            background-color: rgba($black, .2);
+        }
+
+        .e-slide-content {
+            padding: 40px 0 24px;
+        }
+    }
 }
 
 .b-slider.m-mobile-screens {
