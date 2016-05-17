@@ -27,4 +27,23 @@ $(document).ready(function($) {
             }
         ]
     });
+
+    $('.b-slider.m-standard').slick({
+        arrows: true,
+        infinite: true,
+        draggable: false,
+        slidesToShow: 1,
+        variableWidth: true,
+        focusOnSelect: true,
+        swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    draggable: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
 });
