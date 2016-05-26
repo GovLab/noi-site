@@ -2,7 +2,7 @@ $(function() {
     // pull posts from wordpress.com api
     $.ajax({
         type: "GET",
-        url: 'https://public-api.wordpress.com/rest/v1.1/sites/mrfpblog.wordpress.com/posts/?number=3',
+        url: 'https://public-api.wordpress.com/rest/v1.1/sites/thegovlab.org/posts/?number=3',
         dataType: 'json',
     }).success( function(response){
         r = response;
@@ -12,7 +12,7 @@ $(function() {
 
         for (var post in r.posts) {
             var date = new Date(r.posts[post].date);
-            $( slide ).find('.e-post-name').text( r.posts[post].title );
+            $( slide ).find('.e-post-name').text( r.posts[post].title.replace(new RegExp('&#8217;', 'g'), "'") );
             $( slide ).find('.e-date').text( date.toDateString() );
             $( slide ).find('.e-post').html( r.posts[post].excerpt );
             // $( slide ).find('.e-read-more').attr( 'href', r.posts[post].URL );
