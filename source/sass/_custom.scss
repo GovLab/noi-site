@@ -127,7 +127,7 @@
         span {
             color: $white;
             float: right;
-            
+
         }
 
         &:nth-of-type(even) {
@@ -162,7 +162,7 @@
 }
 
 .b-slider.m-news {
-    .b-slide { 
+    .b-slide {
         width: 100vw;
         padding: 0;
 
@@ -277,4 +277,50 @@
     .m-mexico { background-image: url("../img/flags/mexico-flag.png") }
     .m-argentina { background-image: url("../img/flags/argentina-flag.png") }
     .m-south-australia { background-image: url("../img/flags/south-australia-flag.png") }
+}
+
+
+
+#wp-slider {
+    .b-slide {
+        @include breakpoint(0px 550px) {
+            // background-color: red;
+            min-height: 490px;
+            padding: 20px 0;
+        }
+        @include breakpoint(550px 640px) {
+            // background-color: blue;
+            min-height: 420px;
+            padding: 20px 0;
+        }
+        @include breakpoint(640px 800px) {
+            // background-color: teal;
+            min-height: 400px;
+            padding: 20px 30px;
+        }
+        @include breakpoint(800px 1000px) {
+            // background-color: orange;
+            min-height: 380px;
+            padding: 20px 40px;
+        }
+        @include breakpoint(1000px) {
+            // background-color: green;
+            min-height: 410px;
+            padding: 20px 80px;
+        }
+
+    }
+}
+
+.slick {
+    @include breakpoint(0px 640px) {
+        .slick-arrow {
+            visibility: hidden;
+        }
+    }
+    @include breakpoint(640px) {
+        .slick-arrow {
+            visibility: visible;
+        }
+    }
 }
