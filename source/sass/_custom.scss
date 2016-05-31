@@ -1,3 +1,8 @@
+$noi-yellow: #d9b549;
+$noi-orange: #ed5c42;
+$noi-green: #008793;
+$noi-purple: #523080;
+
 .b-above-header {
     padding: 5px;
     &.m-blue { background-color: darken($blue, 2); }
@@ -149,10 +154,10 @@
         float: left;
         display: inline-block;
 
-        &.m-yellow { background-color: $yellow; }
-        &.m-orange { background-color: $orange; }
-        &.m-green { background-color: $green; }
-        &.m-purple { background-color: $purple; }
+        &.m-yellow { background-color: $noi-yellow; }
+        &.m-orange { background-color: $noi-orange; }
+        &.m-green { background-color: $noi-green; }
+        &.m-purple { background-color: $noi-purple; }
     }
 }
 
